@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170226142916) do
+ActiveRecord::Schema.define(version: 20170228151820) do
 
   create_table "banners", force: :cascade do |t|
     t.string   "title"
@@ -89,7 +89,7 @@ ActiveRecord::Schema.define(version: 20170226142916) do
     t.integer  "price"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
-    t.string   "photo"
+    t.string   "image"
     t.boolean  "onsale",      default: false
     t.integer  "category_id"
     t.string   "author"

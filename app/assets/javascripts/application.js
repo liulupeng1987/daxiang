@@ -22,3 +22,22 @@
 //= require_tree .
 
 $('#sub_categories').html("<%= j collection_select(:post, :category_id, @subcategories, :id, :title), { prompt: 'Select subcategory...' }, { disabled: false } %>");
+$(document).on('mouseover', '.intro-preview-item', function () {
+    var src = $(this).find('img').attr('src')
+    $('.intro-bigPic img').attr('src', src)
+    $('#thumb-lens').css('background-image', 'url(' + src + ')')
+    $(this).addClass('intro-preview-activeItem').siblings().removeClass('intro-preview-activeItem')
+    m.attach({
+        thumb: '#thumb',
+        large: src,
+        largeWrapper: 'preview'
+    })
+})
+
+$('.intro-preview-activeItem').trigger('mouseover')
+$(document).on('mouseover', '.magnifier-thumb-wrapper', function (e) {
+    $('#preview').css('visibility', 'visible')
+})
+$(document).on('mouseout', '.magnifier-thumb-wrapper', function (e) {
+    $('#preview').css('visibility', 'hidden')
+})
