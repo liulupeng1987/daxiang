@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'static_pages/payment'
+
+  get 'static_pages/guide'
+
+  get 'static_pages/shipping'
+
+  get 'static_pages/advice'
+
+  get 'static_pages/about'
+
+  get 'static_pages/service'
+
   devise_for :users
 
   root "products#index"
