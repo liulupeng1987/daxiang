@@ -1,17 +1,21 @@
 <div class="left_nav">
 
-  <h3>Popular in Books</h3>
+  <h2>分类列表</h2>
   <ul>
-    <li><a href="#">Some Books</a></li>
-    <li><a href="#">Some Books</a></li>
-    <li><a href="#">Some Books</a></li>
-    <li><a href="#">Some Books</a></li>
+    <% Category.main_categories.each do |main_category| %>
+      <div>
+        <li><%= main_category.name %></li>
+        <!-- <% if main_category %> -->
+        <ul>
+          <% main_category.children_categories.each do |sub_category| %>
+            <li> <%= link_to( sub_category.name, category_path(sub_category)) %> </li>
+          <% end %>
+        <!-- <% end %> -->
+      </ul>
+      </div>
+    <% end %>
   </ul>
-  <% Category.all.each do |category| %>
-          <li class="menuList-item fl <%= 'menuList-activeItem' if @product.category.name == category.name %>">
-            <%= link_to category.name, products_path(category: category.name), class: "link" %>
-          </li>
-        <% end %>
+
 
 
 
