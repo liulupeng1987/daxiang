@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-puts "Seeding......"
+#
+# puts "Seeding......"
 #
 # create_account = User.create([email: "2@2.cn", password:"abcabc",password_confirmation: "abcabc",is_admin:"true"])
 # #
@@ -16,13 +16,13 @@ puts "Seeding......"
 # create_account_user = User.create([email: "1@1.com", password:"abcabc",password_confirmation: "abcabc",is_admin:"false"])
 # #
 # puts "User account created."
-
-
-# ..............................
-#   0. create banners
-# ..............................
 #
-
+#
+# # ..............................
+# #   0. create banners
+# # ..............................
+# #
+#
 #
 # img_folder = "#{Rails.root}/public/images/banners"
 #
@@ -42,7 +42,7 @@ puts "Seeding......"
 #                 is_hidden: false])
 # end
 # puts "Banners created..."
-
+#
 
 
 # ..............................
@@ -87,11 +87,11 @@ content_json = JSON.parse(content)
 #   categories[main_category] = sub_categories
 #
 # end
-
-
-# ..............................
-#   3. Add Book Categories
-# ..............................
+#
+#
+# # ..............................
+# #   3. Add Book Categories
+# # ..............................
 #
 # puts "Seeding......"
 # categories.each do |main_category, sub_categories|
