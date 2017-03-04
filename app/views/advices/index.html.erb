@@ -1,0 +1,19 @@
+<h2>用户建议列表</h2>
+<table class="table table-boldered">
+  <% @advices.each do |advice| %>
+  <tr>
+    <td>
+      <%= advice.title %>
+    </td>
+    <td>
+      <%= advice.name %>
+    </td>
+    <td>
+      <%= advice.description %>
+    </td>
+    <td>
+      <%= advice.phone %>
+    </td>
+  </tr>
+  <% end %>
+</table>

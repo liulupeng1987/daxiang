@@ -1,0 +1,12 @@
+<h1> 请填写您的意见和建议 </h1>
+
+<%= simple_form_for @advice do |f| %>
+
+<%= f.input :title %>
+<%= f.input :name %>
+<%= f.input :description %>
+<%= f.input :phone %>
+
+
+  <%= f.submit "Submit" %>
+<% end %>
