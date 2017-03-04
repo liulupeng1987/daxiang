@@ -14,6 +14,9 @@ production:
   AWS_SECRET_ACCESS_KEY: "/kNrKIPcGa0/5O/0EOO591dPiMKZt03CnnBXg/wp"  # 你的 Secret access key
   AWS_REGION: "ap-northeast-1"  # 你的 S3 bucket 的 Region 位置
   AWS_BUCKET_NAME: "eshopquanzhan"  # 你设定的 bucket name
+  SEND_CLOUD_USER_NAME: "liulupeng_test_iHKbeS"  # 你的 API_USER
+
+  SEND_CLOUD_USER_KEY: "SXnoG7PIXSlhUrN9"  # 你的 API_KEY
 
 
 development:
@@ -21,3 +24,6 @@ development:
   AWS_SECRET_ACCESS_KEY: "/kNrKIPcGa0/5O/0EOO591dPiMKZt03CnnBXg/wp"  # 你的 Secret access key
   AWS_REGION: "ap-northeast-1"  # 你的 S3 bucket 的 Region 位置
   AWS_BUCKET_NAME: "eshopquanzhan"  # 你设定的 bucket name
+  SEND_CLOUD_USER_NAME: "liulupeng_test_iHKbeS"  # 你的 API_USER
+
+  SEND_CLOUD_USER_KEY: "SXnoG7PIXSlhUrN9"  # 你的 API_KEY

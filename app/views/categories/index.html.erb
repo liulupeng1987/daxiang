@@ -10,14 +10,16 @@
 			</div>
 		</div>
 
-    
+
 
     <div class="row">
       <div class="col-md-12">
         <div class="col-md-2">
           <%= render "common/left_nav" %>
   			</div>
-        div class="row products-container">
+
+        <div class="col-md-10">
+          <div class="row">
           <% Product.all.each do |product|%>
           <div class="col-xs-6 col-md-2">
             <div class="thumbnail category-product">
@@ -50,11 +52,12 @@
             </div>
           </div>
           <% end %>
-        </div>
+
 
       </div>
     </div>
-
+    </div>
+</div>  <!-- col-md-10 end -->
 
   </div>
 </div>
