@@ -1,0 +1,11 @@
+<h1> 请填写求购书籍信息 </h1>
+
+<%= simple_form_for @subscribe do |f| %>
+
+<%= f.input :booktitle %>
+<%= f.input :bookauthor%>
+<%= f.input :email%>
+<%= f.input :phone%>
+
+  <%= f.submit "Submit" %>
+<% end %>

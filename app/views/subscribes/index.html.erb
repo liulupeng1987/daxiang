@@ -1,0 +1,22 @@
+<h2>新书求购列表</h2>
+<table class="table table-boldered">
+  <% @subscribes.each do |subscribe| %>
+  <tr>
+    <td>
+      <%= subscribe.booktitle %>
+    </td>
+    <td>
+      <%= subscribe.bookauthor %>
+    </td>
+    <td>
+      <%= subscribe.email %>
+    </td>
+    <td>
+      <%= subscribe.phone %>
+    </td>
+    <td>
+      <%= subscribe.created_at %>
+    </td>
+  </tr>
+  <% end %>
+</table>
