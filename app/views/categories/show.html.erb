@@ -23,7 +23,7 @@
             <% @products.each do |product| %>
             <div class="col-xs-6 col-md-3">
               <div class="thumbnail category-product">
-
+                <div class="box2">
                 <%= link_to product_path(product) do %>
                   <% if product.photos.present? %>
                     <%= image_tag(product.photos[0].avatar.big_thumb.url) %>
@@ -31,6 +31,7 @@
                     <% image_tag("no-pic.png") %>
                   <% end %>
                 <% end %>
+              </div>
                 <div class="product-info">
                   <div class="cation">
                     <%= link_to product_path(product) do %>
