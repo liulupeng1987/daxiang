@@ -51,19 +51,7 @@
       <%= f.file_field :avatar, :multiple => true, name: "photos[avatar][]" %>
     </div>
 
-      <% if @product.prints.present? %>
-          <span>详情图</span> <br>
-          <% @product.prints.each do |p| %>
-            <%= image_tag p.avatar.thumb.url %><br>
-          <% end %>
-      <% end %>
 
-    <div class="group">
-      <%#= f.input :image, as: :file %>
-      <%= f.label :avatar %><br>
-      <%= f.file_field :avatar, :multiple => true, name: "prints[avatar][]" %>
-    </div>
-    
 	<div class="group"><%= f.input :onsale %></div>
 
 	<%= f.submit "Submit", data: {disable_with: "Submitting..."} %>
