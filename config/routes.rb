@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'static_pages/shipping'
 
-  get 'static_pages/advice'
+
 
   get 'static_pages/about'
 
@@ -86,6 +86,7 @@ Rails.application.routes.draw do
   #resources :brands
   resources :categories
   resources :subscribes
+  resources :subscribers
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

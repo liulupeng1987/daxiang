@@ -1,0 +1,11 @@
+<h1> 请填写您的姓名和邮箱地址 </h1>
+
+<%= simple_form_for @subscriber do |f| %>
+
+<%= f.input :name %>
+
+<%= f.input :email%>
+
+
+  <%= f.submit "Submit" %>
+<% end %>

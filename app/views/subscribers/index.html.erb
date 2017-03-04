@@ -1,0 +1,13 @@
+<h2>订阅用户列表</h2>
+<table class="table table-boldered">
+  <% @subscribers.each do |subscriber| %>
+  <tr>
+    <td>
+      <%= subscriber.name %>
+    </td>
+    <td>
+      <%= subscriber.email %>
+    </td>
+  </tr>
+  <% end %>
+</table>
