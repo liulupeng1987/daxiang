@@ -4,7 +4,7 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-gem 'sqlite3'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
@@ -49,6 +49,7 @@ gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'figaro'
 gem 'fog'
+gem 'sqlite3'
 
 
 
